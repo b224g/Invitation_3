@@ -119,3 +119,7 @@ body {
     color: #8b008b;
     transition: opacity 0.5s ease;
   }
+  .interactions {
+    margin-top: 30px;
+  }
+  
