@@ -7,13 +7,15 @@ body {
   }
   
   .invitation {
-    max-width: 700px;
+    max-width: 750px;
     margin: 50px auto;
-    padding: 30px;
+    padding: 40px;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     text-align: center;
+    border: 12px solid transparent;
+    border-image: url('images/bordure-doree.png') 40 round;
     animation: fadeIn 2s ease-in-out;
   }
   
@@ -44,12 +46,6 @@ body {
     color: #8b008b;
   }
   
-  .details p {
-    font-size: 1.1em;
-    margin: 8px 0;
-    color: #444;
-  }
-  
   .photos-couple {
     display: flex;
     justify-content: center;
@@ -60,13 +56,13 @@ body {
   
   .photo {
     text-align: center;
-    animation: fadeIn 2s ease;
   }
   
   .photo img {
     width: 160px;
     height: 160px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
     border: 4px solid #d4af37;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -74,7 +70,8 @@ body {
   }
   
   .photo img:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
   }
   
   .nom-photo {
@@ -82,6 +79,27 @@ body {
     font-weight: bold;
     color: #8b008b;
     font-size: 1.1em;
+  }
+  
+  .details {
+    margin-top: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .details p {
+    margin: 10px 0;
+  }
+  
+  .icone {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .interactions {
+    margin-top: 30px;
   }
   
   input[type="file"] {
@@ -119,7 +137,7 @@ body {
     color: #8b008b;
     transition: opacity 0.5s ease;
   }
-  .interactions {
-    margin-top: 30px;
+  .emoji {
+    font-size: 1.4em;
+    margin-right: 8px;
   }
-  
