@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitation Mariage</title>
+  <title>Invitation de Mariage</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="invitation">
     <h1>💍 Boubacar & Fatoumata</h1>
-    <p class="texte-intro">Nous avons le plaisir de vous inviter à célébrer notre union</p>
-    
+    <p class="texte-intro">
+      <span class="noms-dores">Boubacar Biro Barry & Fatoumata Sy Savane</span><br>
+      ont le plaisir de vous convier à leur mariage
+    </p>
+
     <div class="details">
-      <p><strong>Date :</strong> Samedi 12 Octobre 2025</p>
-      <p><strong>Lieu :</strong> Jardin Botanique de Conakry</p>
-      <p><strong>Heure :</strong> 16h00</p>
+      <p><strong>Date :</strong> Dimanche 07 Décembre 2025</p>
+      <p><strong>Lieu :</strong> À Hamdallaye chez la mariée</p>
+      <p><strong>Heure :</strong> Mariage religieux à 13h, réception à 16h</p>
     </div>
 
     <div class="photos-couple">
@@ -28,7 +31,13 @@
       </div>
     </div>
 
-    <p class="message-final">Nous espérons vous voir nombreux pour partager ce moment magique ✨</p>
+    <input type="file" id="imageUpload" accept="image/*">
+    <div id="imageContainer"></div>
+
+    <button class="btn" onclick="afficherMessage()">💌 Voir le mot des mariés</button>
+    <p id="messageSecret">Merci de partager ce moment magique avec nous 💖</p>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -14,12 +14,28 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
   
   h1 {
     font-size: 2.5em;
     color: #d4af37;
     margin-bottom: 10px;
+  }
+  
+  .noms-dores {
+    background: linear-gradient(90deg, #f5deb3, #ffd700, #daa520);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px #b8860b;
   }
   
   .texte-intro {
@@ -68,14 +84,38 @@ body {
     font-size: 1.1em;
   }
   
-  .message-final {
-    margin-top: 30px;
-    font-size: 1.2em;
-    color: #d4af37;
-    font-style: italic;
+  input[type="file"] {
+    margin-top: 20px;
   }
   
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  #imageContainer img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #b8860b;
+  }
+  
+  #messageSecret {
+    display: none;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.2em;
+    color: #8b008b;
+    transition: opacity 0.5s ease;
   }
