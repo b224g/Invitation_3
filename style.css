@@ -1,3 +1,16 @@
+@keyframes clignoter {
+  0% {
+    background-color: #ac3535;
+  }
+  50% {
+    background-color: #aa4028;
+  }
+  100% {
+    background-color: #f67b53;
+  }
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -128,17 +141,30 @@ body {
   .btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #d4af37;
+    background-color: #e4ca76;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
   }
   
+  .btn_clignotant {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ac3535;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: clignoter 1s infinite;
+  }
   .btn:hover {
-    background-color: #b8860b;
+    background-color: #ac3535;
   }
   
   #messageSecret {
@@ -152,4 +178,14 @@ body {
   .emoji {
     font-size: 1.4em;
     margin-right: 8px;
+  }
+.blink-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4747;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  animation: blink 1s infinite; /* applique l'animation */
   }
