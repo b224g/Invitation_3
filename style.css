@@ -10,6 +10,27 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes clignoter_cadre {
+  0% {
+    border-color: #e4ca76;
+  }
+  50% {
+    border-color: #d1b456;
+  }
+  100% {
+    border-color: #e4ca76;
+  }
+}
+
 
 body {
     margin: 0;
@@ -32,6 +53,18 @@ body {
     border-image: url('images/bordure-doree.png') 40 round;
     animation: fadeIn 2s ease-in-out;
     border: 10px solid #d4af37;
+  }
+  .invitation1 {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    text-align: center;
+    border: 10px solid transparent;
+    border-image: url('images/bordure-doree.png') 40 round;
+    animation: fadeIn 2s ease-in-out, clignoter_cadre 2s infinite ease-in-out;
   }
   
   @keyframes fadeIn {
